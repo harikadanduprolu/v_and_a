@@ -48,12 +48,31 @@ const Hero = () => {
 
           {/* CTA buttons */}
           <div className={`flex flex-col sm:flex-row items-center justify-center gap-4 opacity-0 ${isLoaded ? 'animate-fade-in animate-delay-500' : ''}`}>
-            <a href="/rsvp" className="button-primary">
-              RSVP
-            </a>
-            <a href="#story" className="button-secondary">
+          <button
+  onClick={() => {
+    document.getElementById('details')?.scrollIntoView({
+      behavior: 'smooth',
+    });
+  }}
+  className="button-primary"
+>
+  Details
+</button>
+
+            {/* <a href="#story" className="button-secondary">
               Our Story
-            </a>
+            </a> */}
+           <button
+  onClick={() => {
+    document.getElementById('gallery')?.scrollIntoView({
+      behavior: 'smooth',
+    });
+  }}
+  className="button-secondary"
+>
+  Gallery
+</button>
+
           </div>
         </div>
       </div>

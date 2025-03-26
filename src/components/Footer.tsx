@@ -19,7 +19,6 @@ const Footer = () => {
             <a href="/" className="text-gray-600 hover:text-rose-600 transition-colors">Home</a>
             <a href="/details" className="text-gray-600 hover:text-rose-600 transition-colors">Details</a>
             <a href="/gallery" className="text-gray-600 hover:text-rose-600 transition-colors">Gallery</a>
-            <a href="/rsvp" className="text-gray-600 hover:text-rose-600 transition-colors">RSVP</a>
           </div>
           
           <div className="flex justify-center items-center text-rose-400">

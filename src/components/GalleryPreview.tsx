@@ -14,7 +14,7 @@ const GalleryPreview = () => {
   ];
 
   return (
-    <section className="section-padding bg-white">
+    <section className="section-padding bg-white" id="gallery">
       <div className="container mx-auto">
         <h2 className="font-serif text-4xl md:text-5xl text-gray-800 text-center mb-4">Gallery</h2>
         <div className="floral-divider">

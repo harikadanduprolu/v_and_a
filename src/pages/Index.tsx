@@ -1,7 +1,7 @@
 
 import React, { useEffect } from 'react';
 import Hero from '../components/Hero';
-import CoupleStory from '../components/CoupleStory';
+import CoupleStory from '../components/WeddingStory';
 import EventDetails from '../components/EventDetails';
 import GalleryPreview from '../components/GalleryPreview';
 import Footer from '../components/Footer';

@@ -16,26 +16,29 @@ const EventDetails = () => {
       date: "December 10, 2023",
       time: "7:00 PM - 12:00 AM",
       location: "The Oberoi Udaivilas, Udaipur",
-      description: "A night of music, dance, and celebration as both families come together to perform and enjoy the pre-wedding festivities."
+      description: "A night of music, dance, and celebration as both families come together to perform and enjoy the pre-wedding festivities.",
+      link: "https://maps.google.com"
     },
     {
       name: "Wedding Ceremony",
       date: "December 11, 2023",
       time: "6:30 PM - 8:30 PM",
       location: "The Oberoi Udaivilas, Udaipur",
-      description: "The traditional Indian wedding ceremony where we will exchange vows and begin our journey as husband and wife."
+      description: "The traditional Indian wedding ceremony where we will exchange vows and begin our journey as husband and wife.",
+      link: "https://maps.google.com"
     },
     {
       name: "Reception",
       date: "December 11, 2023",
       time: "9:00 PM - 1:00 AM",
       location: "The Oberoi Udaivilas, Udaipur",
-      description: "Join us for dinner and dancing as we celebrate our new beginning with all our loved ones."
+      description: "Join us for dinner and dancing as we celebrate our new beginning with all our loved ones.",
+      link: "https://maps.google.com"
     }
   ];
 
   return (
-    <section className="section-padding">
+    <section className="section-padding" id="details">
       <div className="container mx-auto">
         <h2 className="font-serif text-4xl md:text-5xl text-gray-800 text-center mb-4">Wedding Events</h2>
         <div className="floral-divider">
@@ -53,6 +56,7 @@ const EventDetails = () => {
             >
               <div className="bg-rose-100 rounded-md px-4 py-2 inline-block mb-4">
                 <h3 className="font-serif text-lg text-rose-700">{event.name}</h3>
+                
               </div>
               <div className="space-y-3">
                 <div className="flex items-center gap-3">
@@ -70,30 +74,17 @@ const EventDetails = () => {
                 <p className="text-gray-600 mt-4 pt-4 border-t border-rose-100">
                   {event.description}
                 </p>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        <div className="mt-16 glass-card opacity-0 animate-fade-in animate-delay-700">
-          <h3 className="font-serif text-2xl text-gray-800 mb-4 text-center">Venue</h3>
-          <div className="aspect-[16/9] rounded-lg overflow-hidden bg-rose-100 mb-6">
-            <div className="w-full h-full flex items-center justify-center">
-              <p className="font-serif italic text-rose-500">Map will be displayed here</p>
-            </div>
-          </div>
-          <div className="text-center">
-            <h4 className="font-serif text-xl text-gray-800 mb-2">The Oberoi Udaivilas</h4>
-            <p className="text-gray-600 mb-4">Udaipur, Rajasthan, India</p>
-            <a 
-              href="https://maps.google.com" 
+                <a 
+              href={event.link}
               target="_blank" 
               rel="noopener noreferrer"
               className="button-secondary inline-block"
             >
               Get Directions
             </a>
-          </div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
