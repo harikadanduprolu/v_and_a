@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Heart } from 'lucide-react';
+import { Heart, Star } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -22,9 +22,9 @@ const Footer = () => {
           </div>
           
           <div className="flex justify-center items-center text-rose-400">
-            <Heart className="h-4 w-4 mr-2 animate-pulse-soft" />
-            <p className="text-sm">December 11, 2023 • Udaipur, India</p>
-            <Heart className="h-4 w-4 ml-2 animate-pulse-soft" />
+            <Star className="h-4 w-4 mr-2 animate-pulse-soft" />
+            <p className="text-sm">December 11, 2017 • Borgo Finocchieto, Tuscany, Italy</p>
+            <Star className="h-4 w-4 ml-2 animate-pulse-soft" />
           </div>
         </div>
       </div>

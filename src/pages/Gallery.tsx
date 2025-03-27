@@ -19,13 +19,25 @@ const Gallery = () => {
   const galleryItems = [
     { id: 1, category: 'journey', title: 'First Date', link: 'https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2021/11/virat-kohli-anushka-sharma-1-1638104800.jpg' },
     { id: 2, category: 'journey', title: 'Vacation in Paris', link: 'https://bsmedia.business-standard.com/_media/bs/img/article/2023-02/16/full/1676546881-8054.jpeg?im=FeatureCrop,size=(826,465)' },
-    { id: 3, category: 'moments', title: 'Wedding Vows', link: 'https://im.rediff.com/movies/2017/dec/11virat-wedding4.jpg?w=670&h=900' },
-    { id: 4, category: 'moments', title: 'Haldi Ceremony', link: 'https://www.pinkvilla.com/imageresize/virushka-haldi-pic.jpg?width=752&t=pvorg' },
-    { id: 5, category: 'prewedding', title: 'Engagement Ceremony', link: 'https://img.etimg.com/thumb/width-640,height-480,imgsize-23902,resizemode-75,msid-62001346/magazines/panache/the-virat-kohli-anushka-sharma-wedding-a-pictorial-timeline/virat-kohli-anushka-sharma-engagement.jpg' },
+    { id: 3, category: 'moments', title: 'Wedding Vows', link: 'https://i.dawn.com/primary/2017/12/5a2edbf9e0352.jpg' },
+    { id: 4, category: 'moments', title: 'Haldi Ceremony', link: 'https://metromatinee.com/wp-content/uploads/2017/11/ViratKohli_AnushkaSharma_latest_photos-5.jpg' },
+    { id: 5, category: 'prewedding', title: 'Engagement Ceremony', link: 'https://qph.cf2.quoracdn.net/main-qimg-92ada9a72988bb0f5e9e38a722bab3cd-lq' },
     { id: 6, category: 'prewedding', title: 'Mehendi Function', link: 'https://www.filmibeat.com/img/2017/12/10-1512892358-virat-anushka-wedding-16.jpg' },
     { id: 7, category: 'journey', title: 'Honeymoon in Finland', link: 'https://www.deccanherald.com/sites/dh/files/articleimages/2020/10/22/virat-anushka-honeymoon-903617-1603355764.jpg' },
     { id: 8, category: 'moments', title: 'Reception in Delhi', link: 'https://im.rediff.com/movies/2017/dec/22virat-anushka-reception5.jpg' },
-    { id: 9, category: 'prewedding', title: 'Family Gathering Before Wedding', link: 'https://www.india.com/wp-content/uploads/2017/12/virat-anushka-family.jpg' },
+    { id: 9, category: 'wedding', title: 'Family Gathering Before Wedding', link: 'https://www.india.com/wp-content/uploads/2017/12/virat-anushka-family.jpg' },
+    { id: 10, category: 'wedding', title: 'Varmala', link: 'https://img.etimg.com/thumb/msid-62032008,width-480,height-360,imgsize-115527,resizemode-75/under-the-tuscan-sun.jpg' },
+    { id: 11, category: 'prewedding', title: 'Family Gathering Before Wedding', link: 'https://www.india.com/wp-content/uploads/2017/12/virat-anushka-family.jpg' },
+    { id: 12, category: 'prewedding', title: 'Family Gathering Before Wedding', link: 'https://www.india.com/wp-content/uploads/2017/12/virat-anushka-family.jpg' },
+    { id: 13, category: 'prewedding', title: 'Family Gathering Before Wedding', link: 'https://www.india.com/wp-content/uploads/2017/12/virat-anushka-family.jpg' },
+    { id: 14, category: 'prewedding', title: 'Family Gathering Before Wedding', link: 'https://www.india.com/wp-content/uploads/2017/12/virat-anushka-family.jpg' },
+    { id: 15, category: 'prewedding', title: 'Family Gathering Before Wedding', link: 'https://www.india.com/wp-content/uploads/2017/12/virat-anushka-family.jpg' },
+    { id: 16, category: 'prewedding', title: 'Family Gathering Before Wedding', link: 'https://www.india.com/wp-content/uploads/2017/12/virat-anushka-family.jpg' },
+    { id: 17, category: 'prewedding', title: 'Family Gathering Before Wedding', link: 'https://www.india.com/wp-content/uploads/2017/12/virat-anushka-family.jpg' },
+    { id: 18, category: 'prewedding', title: 'Family Gathering Before Wedding', link: 'https://www.india.com/wp-content/uploads/2017/12/virat-anushka-family.jpg' },
+    { id: 19, category: 'prewedding', title: 'Family Gathering Before Wedding', link: 'https://www.india.com/wp-content/uploads/2017/12/virat-anushka-family.jpg' },
+    { id: 20, category: 'prewedding', title: 'Family Gathering Before Wedding', link: 'https://www.india.com/wp-content/uploads/2017/12/virat-anushka-family.jpg' },
+    { id: 21, category: 'prewedding', title: 'Family Gathering Before Wedding', link: 'https://www.india.com/wp-content/uploads/2017/12/virat-anushka-family.jpg' }
   ];
 
   const filteredItems =

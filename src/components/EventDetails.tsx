@@ -30,14 +30,14 @@ const EventDetails = () => {
     },
     {
       name: "Wedding Ceremony",
-      date: "December 11, 2023",
+      date: "December 11, 2017",
       time: "4:00 PM - 6:00 PM (IST)",
       location: "Borgo Finocchieto, Tuscany, Italy",
       description: "The traditional Indian wedding ceremony where we will exchange vows and begin our journey as husband and wife.",
       link: "https://maps.app.goo.gl/YH3x3KVzdwaxGCo2A"
     },
     {
-      name: "Reception",
+      name: "Delhi Reception",
       date: "December 21, 2017",
       time: "8:00 PM onwards (IST)",
       location: "Durbar Hall, Taj Diplomatic Enclave, New Delhi",
@@ -45,8 +45,8 @@ const EventDetails = () => {
       link: "https://maps.app.goo.gl/g5F8rATCq2YU6uBHA"
     },
     {
-      name: "Reception",
-      date: "December 26, 2023",
+      name: "Mumbai Reception",
+      date: "December 26, 2017",
       time: "8:00 PM onwards (IST)",
       location: "The Astor Ballroom, St. Regis Hotel, Mumbai",
       description: "A star-studded night in Mumbai with Bollywood and sports icons in attendance with all the blessings.",

@@ -3,7 +3,7 @@ import React from 'react';
 
 const CoupleStory = () => {
   return (
-    <section id="story" className="section-padding bg-gradient-to-b from-white to-rose-50">
+    <section  className="section-padding bg-gradient-to-b from-white to-rose-50">
       <div className="container mx-auto">
         <div className="max-w-4xl mx-auto">
           <h2 className="font-serif text-4xl md:text-5xl text-gray-800 text-center mb-4">Our Love Story</h2>
