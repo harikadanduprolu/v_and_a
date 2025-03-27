@@ -5,36 +5,54 @@ import { Calendar, Clock, MapPin } from 'lucide-react';
 const EventDetails = () => {
   const events = [
     {
-      name: "Mehndi",
-      date: "December 9, 2023",
-      time: "11:00 AM - 3:00 PM",
-      location: "The Oberoi Udaivilas, Udaipur",
-      description: "Join us for the beautiful and traditional Mehndi ceremony where intricate henna designs will adorn the bride's hands and feet."
+      name: "Engagement",
+      date: "December 9, 2017",
+      time: "7:00 PM - 9:00 PM (IST)",
+      location: "Borgo Finocchieto, Tuscany, Italy",
+      description: "A heartfelt exchange of rings in an intimate setting, marking the beginning of their forever.",
+      link:'https://maps.app.goo.gl/YH3x3KVzdwaxGCo2A'
     },
     {
-      name: "Sangeet",
-      date: "December 10, 2023",
-      time: "7:00 PM - 12:00 AM",
-      location: "The Oberoi Udaivilas, Udaipur",
-      description: "A night of music, dance, and celebration as both families come together to perform and enjoy the pre-wedding festivities.",
-      link: "https://maps.google.com"
+      name: "Mehendi",
+      date: "December 10, 2017",
+      time: "11:00 AM - 2:00 PM (IST)",
+      location: "Borgo Finocchieto, Tuscany, Italy",
+      description: "A vibrant celebration of an Indian tradition filled with laughter, music, and intricate mehendi designs.",
+      link: "https://maps.app.goo.gl/YH3x3KVzdwaxGCo2A"
+    },
+    {
+      name: "Haldi",
+      date: "December 10, 2017",
+      time: " 5:00 PM - 7:00 PM (IST)",
+      location: "Borgo Finocchieto, Tuscany, Italy",
+      description: "A joyful ritual where turmeric was applied, blessing the couple with love and prosperity.",
+      link: "https://maps.app.goo.gl/YH3x3KVzdwaxGCo2A"
     },
     {
       name: "Wedding Ceremony",
       date: "December 11, 2023",
-      time: "6:30 PM - 8:30 PM",
-      location: "The Oberoi Udaivilas, Udaipur",
+      time: "4:00 PM - 6:00 PM (IST)",
+      location: "Borgo Finocchieto, Tuscany, Italy",
       description: "The traditional Indian wedding ceremony where we will exchange vows and begin our journey as husband and wife.",
-      link: "https://maps.google.com"
+      link: "https://maps.app.goo.gl/YH3x3KVzdwaxGCo2A"
     },
     {
       name: "Reception",
-      date: "December 11, 2023",
-      time: "9:00 PM - 1:00 AM",
-      location: "The Oberoi Udaivilas, Udaipur",
-      description: "Join us for dinner and dancing as we celebrate our new beginning with all our loved ones.",
-      link: "https://maps.google.com"
+      date: "December 21, 2017",
+      time: "8:00 PM onwards (IST)",
+      location: "Durbar Hall, Taj Diplomatic Enclave, New Delhi",
+      description: "Join us for dinner and dancing as we celebrate our new beginning with all our loved ones in Delhi.",
+      link: "https://maps.app.goo.gl/g5F8rATCq2YU6uBHA"
+    },
+    {
+      name: "Reception",
+      date: "December 26, 2023",
+      time: "8:00 PM onwards (IST)",
+      location: "The Astor Ballroom, St. Regis Hotel, Mumbai",
+      description: "A star-studded night in Mumbai with Bollywood and sports icons in attendance with all the blessings.",
+      link: "https://maps.app.goo.gl/G71qFkQNzGC9kvDj8"
     }
+
   ];
 
   return (

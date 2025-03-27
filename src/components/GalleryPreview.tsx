@@ -5,12 +5,19 @@ import { Link } from 'react-router-dom';
 
 const GalleryPreview = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const categories = [
+    { id: 'all', name: 'All Photos' },
+    { id: 'journey', name: 'Our Journey' },
+    { id: 'moments', name: 'Special Moments' },
+    { id: 'prewedding', name: 'Pre-Wedding' },
+
+  ];
 
   const galleryItems = [
-    { title: "The First Meeting", category: "Our Journey" },
-    { title: "Travel Adventures", category: "Memories" },
-    { title: "Special Moments", category: "Celebrations" },
-    { title: "Pre-Wedding Shoot", category: "Recent" }
+    { title: "The First Meeting", category: "Our Journey", link:'https://timesofindia.indiatimes.com/img/62069586/Master.jpg' },
+    { title: "Travel Adventures", category: "Memories",link:'https://shaadiwish.com/blog/wp-content/uploads/2017/12/7-2.jpg' },
+    { title: "Special Moments", category: "Celebrations", link:'https://shaadiwish.com/blog/wp-content/uploads/2017/12/14-1.jpg' },
+    { title: "Pre-Wedding Shoot", category: "Recent",link:'https://akm-img-a-in.tosshub.com/indiatoday/dsc_9553_122117090440.jpg?VersionId=GG4VlpHGt50rupzaX24aG9DFq4Ka_Z1Q' }
   ];
 
   return (
@@ -32,9 +39,18 @@ const GalleryPreview = () => {
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
             >
-              <div className="w-full h-full bg-rose-200 flex items-center justify-center">
-                <p className="font-serif italic text-rose-500">Gallery Image</p>
-              </div>
+             <div className="relative w-full h-full">
+        <img
+          src={item.link}
+          alt={item.title}
+          className="w-full h-full object-cover"
+          onError={(event) => {
+            const target = event.target as HTMLImageElement;
+            target.src = 'https://via.placeholder.com/300'; // Fallback image
+          }}
+        />
+        
+      </div>
               <div 
                 className={`absolute inset-0 bg-black bg-opacity-40 flex flex-col items-center justify-center transition-opacity duration-300 ${
                   hoveredIndex === index ? 'opacity-100' : 'opacity-0'
@@ -48,6 +64,8 @@ const GalleryPreview = () => {
             </div>
           ))}
         </div>
+       
+
 
         <div className="text-center mt-12">
           <Link to="/gallery" className="inline-flex items-center gap-2 button-secondary">

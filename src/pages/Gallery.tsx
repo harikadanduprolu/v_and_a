@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import Footer from '../components/Footer';
 
@@ -18,20 +17,21 @@ const Gallery = () => {
   ];
 
   const galleryItems = [
-    { id: 1, category: 'journey', title: 'First Date' },
-    { id: 2, category: 'journey', title: 'Vacation in Paris' },
-    { id: 3, category: 'moments', title: 'Award Ceremony' },
-    { id: 4, category: 'moments', title: 'Birthday Celebration' },
-    { id: 5, category: 'prewedding', title: 'Engagement Shoot' },
-    { id: 6, category: 'prewedding', title: 'Pre-Wedding Ritual' },
-    { id: 7, category: 'journey', title: 'Cricket Match' },
-    { id: 8, category: 'moments', title: 'Film Premiere' },
-    { id: 9, category: 'prewedding', title: 'Family Gathering' },
+    { id: 1, category: 'journey', title: 'First Date', link: 'https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2021/11/virat-kohli-anushka-sharma-1-1638104800.jpg' },
+    { id: 2, category: 'journey', title: 'Vacation in Paris', link: 'https://bsmedia.business-standard.com/_media/bs/img/article/2023-02/16/full/1676546881-8054.jpeg?im=FeatureCrop,size=(826,465)' },
+    { id: 3, category: 'moments', title: 'Wedding Vows', link: 'https://im.rediff.com/movies/2017/dec/11virat-wedding4.jpg?w=670&h=900' },
+    { id: 4, category: 'moments', title: 'Haldi Ceremony', link: 'https://www.pinkvilla.com/imageresize/virushka-haldi-pic.jpg?width=752&t=pvorg' },
+    { id: 5, category: 'prewedding', title: 'Engagement Ceremony', link: 'https://img.etimg.com/thumb/width-640,height-480,imgsize-23902,resizemode-75,msid-62001346/magazines/panache/the-virat-kohli-anushka-sharma-wedding-a-pictorial-timeline/virat-kohli-anushka-sharma-engagement.jpg' },
+    { id: 6, category: 'prewedding', title: 'Mehendi Function', link: 'https://www.filmibeat.com/img/2017/12/10-1512892358-virat-anushka-wedding-16.jpg' },
+    { id: 7, category: 'journey', title: 'Honeymoon in Finland', link: 'https://www.deccanherald.com/sites/dh/files/articleimages/2020/10/22/virat-anushka-honeymoon-903617-1603355764.jpg' },
+    { id: 8, category: 'moments', title: 'Reception in Delhi', link: 'https://im.rediff.com/movies/2017/dec/22virat-anushka-reception5.jpg' },
+    { id: 9, category: 'prewedding', title: 'Family Gathering Before Wedding', link: 'https://www.india.com/wp-content/uploads/2017/12/virat-anushka-family.jpg' },
   ];
 
-  const filteredItems = activeCategory === 'all' 
-    ? galleryItems 
-    : galleryItems.filter(item => item.category === activeCategory);
+  const filteredItems =
+    activeCategory === 'all'
+      ? galleryItems
+      : galleryItems.filter((item) => item.category === activeCategory);
 
   return (
     <div className="min-h-screen pt-24">
@@ -43,7 +43,7 @@ const Gallery = () => {
 
         {/* Filter Categories */}
         <div className="flex flex-wrap justify-center gap-3 mb-12">
-          {categories.map(category => (
+          {categories.map((category) => (
             <button
               key={category.id}
               onClick={() => setActiveCategory(category.id)}
@@ -61,15 +61,21 @@ const Gallery = () => {
         {/* Gallery Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {filteredItems.map((item, index) => (
-            <div 
+            <div
               key={item.id}
               className="rounded-lg overflow-hidden shadow-md aspect-square group cursor-pointer opacity-0 animate-scale-in"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <div className="relative w-full h-full">
-                <div className="w-full h-full bg-rose-200 flex items-center justify-center">
-                  <p className="font-serif italic text-rose-500">Gallery Image</p>
-                </div>
+                <img
+                  src={item.link}
+                  alt={item.title}
+                  className="w-full h-full object-cover"
+                  onError={(event) => {
+                    const target = event.target as HTMLImageElement;
+                    target.src = 'https://via.placeholder.com/300'; // Fallback image
+                  }}
+                />
                 <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 flex items-center justify-center transition-all duration-300">
                   <h3 className="text-white text-lg font-serif opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">
                     {item.title}
